@@ -1,0 +1,7 @@
+# Testing
+pytest
+pytest-cov
+httpx
+
+# Linting
+flake8

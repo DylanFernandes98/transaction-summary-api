@@ -1,0 +1,5 @@
+faker==37.11.0
+fastapi==0.120.0
+uvicorn==0.38.0
+python-multipart==0.0.20
+pandas==2.3.3

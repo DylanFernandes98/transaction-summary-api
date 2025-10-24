@@ -1,0 +1,7 @@
+# Ignore generated dataset
+dummy_transactions.csv
+*.csv
+
+# Ignore Python cache
+__pycache__/
+*.pyc
