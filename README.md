@@ -1,6 +1,6 @@
 # Suade Labs Technical Challenge
 
-This project implements a RESTful API built with **FastAPI**. It processes uploaded CSV data and returns per-user transaction summary.  
+This project implements a RESTful API built with **FastAPI**. It processes uploaded CSV data and returns a per-user transaction summary.  
 
 The solution focuses on writing clean, maintainable, and testable code while following RESTful design principles. It demonstrates practical handling of file uploads, data validation, and how to get summary statistics using pandas.
 
@@ -91,4 +91,5 @@ Once the server is running at [http://127.0.0.1:8000](http://127.0.0.1:8000):
   curl http://127.0.0.1:8000/summary/1
   # {"user_id": 1, "min": 10, "max": 200, "mean": 105.25}
   ```
+
 
