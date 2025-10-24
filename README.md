@@ -34,6 +34,8 @@ The solution focuses on writing clean, maintainable, and testable code while fol
 - Data is held in memory (`global data`) for the challenge (suitable for a prototype), but in production this could potentially involve a database like SQLite.  
 - Focused on production-level clarity: descriptive docstrings, comments, and test coverage.
 
+> **Note:** Only `user_id` and `transaction_amount` columns are used from the CSV. All other fields (`transaction_id`, `product_id`, `timestamp`) are ignored for this challenge.
+
 > The challenge spec mentioned a “date range.”  
 > This was consciously omitted to prioritise clarity, correctness, and testing within the 3 hour scope.  
 > The feature could be added later using query parameters (e.g. `start_date`, `end_date`).
@@ -91,5 +93,6 @@ Once the server is running at [http://127.0.0.1:8000](http://127.0.0.1:8000):
   curl http://127.0.0.1:8000/summary/1
   # {"user_id": 1, "min": 10, "max": 200, "mean": 105.25}
   ```
+
 
 
