@@ -1,4 +1,9 @@
 # Transaction Summary API
+![FastAPI](https://img.shields.io/badge/FastAPI-Backend-green?logo=fastapi)
+[![codecov](https://codecov.io/gh/DylanFernandes98/transaction-summary-api/branch/main/graph/badge.svg)](https://codecov.io/gh/DylanFernandes98/transaction-summary-api)
+![Python](https://img.shields.io/badge/Python-3.11-blue.svg)
+
+
 This project implements a RESTful API built with FastAPI that processes uploaded CSV data and returns per-user transaction summaries.
 
 The goal is to demonstrate clean, maintainable, and testable backend design - including file uploads, data validation, and analytical summaries using Pandas.
@@ -89,6 +94,7 @@ Once the server is running at [http://127.0.0.1:8000](http://127.0.0.1:8000):
   curl http://127.0.0.1:8000/summary/1
   # {"user_id": 1, "min": 10, "max": 200, "mean": 105.25}
   ```
+
 
 
 
