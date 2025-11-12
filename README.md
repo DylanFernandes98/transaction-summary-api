@@ -1,8 +1,7 @@
-# Suade Labs Technical Challenge
+# Transaction Summary API
+This project implements a RESTful API built with FastAPI that processes uploaded CSV data and returns per-user transaction summaries.
 
-This project implements a RESTful API built with **FastAPI**. It processes uploaded CSV data and returns a per-user transaction summary.  
-
-The solution focuses on writing clean, maintainable, and testable code while following RESTful design principles. It demonstrates practical handling of file uploads, data validation, and how to get summary statistics using pandas.
+The goal is to demonstrate clean, maintainable, and testable backend design - including file uploads, data validation, and analytical summaries using Pandas.
 
 ## 🚀 Features
 
@@ -27,18 +26,14 @@ The solution focuses on writing clean, maintainable, and testable code while fol
 - Pytest-cov - Test Coverage Reports
 - Httpx - FastAPI's TestClient for Endpoint Testing
 
-## 🧠 Approach
+## 🧠 Design Approach
 
 - Used **FastAPI** for simplicity and performance.  
 - **Pandas** efficiently handles large datasets (tested with 1M+ rows).  
-- Data is held in memory (`global data`) for the challenge (suitable for a prototype), but in production this could potentially involve a database like SQLite.  
+- Data is stored in memory for prototype simplicity - can be upgraded to SQLite or PostgreSQL later.
 - Focused on production-level clarity: descriptive docstrings, comments, and test coverage.
 
-> **Note:** Only `user_id` and `transaction_amount` columns are used from the CSV. All other fields (`transaction_id`, `product_id`, `timestamp`) are ignored for this challenge.
-
-> The challenge spec mentioned a “date range.”  
-> This was consciously omitted to prioritise clarity, correctness, and testing within the 3 hour scope.  
-> The feature could be added later using query parameters (e.g. `start_date`, `end_date`).
+> **Note:** The current prototype focuses on `user_id` and `transaction_amount` columns.  are used from the CSV. Additional fields (e.g. timestamps, categories) can be integrated in future iterations.
 
 ## 🏗️ Project Architecture
 
@@ -93,6 +88,3 @@ Once the server is running at [http://127.0.0.1:8000](http://127.0.0.1:8000):
   curl http://127.0.0.1:8000/summary/1
   # {"user_id": 1, "min": 10, "max": 200, "mean": 105.25}
   ```
-
-
-
