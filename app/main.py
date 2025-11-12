@@ -54,9 +54,6 @@ def get_summary(user_id: int):
     for a given user_id from the uploaded CSV data.
     """
 
-    # Access the global DataFrame variable that stores the uploaded data
-    global data
-
     # Ensure data has been uploaded before generating summaries
     if data is None:
         raise HTTPException(status_code=400, detail="No data uploaded yet. Please use /upload first.")
