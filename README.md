@@ -21,9 +21,9 @@ The goal is to demonstrate clean, maintainable, and testable backend design - in
 ## 🛠 Tech Stack
 
 - Python 3
-- FastAPI - Web Framework
-- Pandas - Data Handling
-- Uvicorn - ASGI Server (Local Development)
+- `FastAPI` - Web Framework
+- `Pandas` - Data Handling
+- `Uvicorn` - ASGI Server (Local Development)
 
 ## 🧪 Testing & CI
 
@@ -94,6 +94,7 @@ Once the server is running at [http://127.0.0.1:8000](http://127.0.0.1:8000):
   curl http://127.0.0.1:8000/summary/1
   # {"user_id": 1, "min": 10, "max": 200, "mean": 105.25}
   ```
+
 
 
 
