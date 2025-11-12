@@ -1,5 +1,4 @@
 """
-Suade Labs Technical Challenge
 Author: Dylan Fernandes
 Description:
 A RESTful API built with FASTAPI that accepts CSV file uploads and returns summary statistics.
