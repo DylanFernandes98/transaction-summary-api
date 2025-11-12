@@ -30,15 +30,17 @@ def upload(file: UploadFile = File(...)):
     Accepts a CSV file upload and validates that it has the correct format.
     Returns a success message with the uploaded filename.
     """
+
+    # Store globally for later access
+    global data
+
     # Validation check
     if not file.filename.endswith(".csv"):
         raise HTTPException(status_code=400, detail="Please upload a CSV file.")
     
     # Read CSV directly from uploaded file
     df = pd.read_csv(file.file)
-
-    # Store globally for later access
-    global data
+    
     data = df
 
     # Return confirmation message if pass 
