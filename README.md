@@ -49,6 +49,7 @@ The goal is to demonstrate clean, maintainable, and testable backend design - in
    ```bash
    git clone https://github.com/DylanFernandes98/transaction-summary-api.git
    cd transaction-summary-api
+   ```
 2. **Create and activate a virtual environment**
 - Windows (PowerShell)
    ```bash
@@ -88,6 +89,7 @@ Once the server is running at [http://127.0.0.1:8000](http://127.0.0.1:8000):
   curl http://127.0.0.1:8000/summary/1
   # {"user_id": 1, "min": 10, "max": 200, "mean": 105.25}
   ```
+
 
 
 
