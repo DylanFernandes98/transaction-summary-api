@@ -33,7 +33,7 @@ The goal is to demonstrate clean, maintainable, and testable backend design - in
 - Data is stored in memory for prototype simplicity - can be upgraded to SQLite or PostgreSQL later.
 - Focused on production-level clarity: descriptive docstrings, comments, and test coverage.
 
-> **Note:** The current prototype focuses on `user_id` and `transaction_amount` columns.  are used from the CSV. Additional fields (e.g. timestamps, categories) can be integrated in future iterations.
+> **Note:** The current prototype focuses on `user_id` and `transaction_amount` columns. Additional fields (e.g. timestamps, categories) can be integrated in future iterations.
 
 ## 🏗️ Project Architecture
 
@@ -47,8 +47,9 @@ The goal is to demonstrate clean, maintainable, and testable backend design - in
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/DylanFernandes98/suade-api.git
-   cd suade-api
+   git clone https://github.com/DylanFernandes98/transaction-summary-api.git
+   cd transaction-summary-api
+   ```
 2. **Create and activate a virtual environment**
 - Windows (PowerShell)
    ```bash
@@ -88,3 +89,7 @@ Once the server is running at [http://127.0.0.1:8000](http://127.0.0.1:8000):
   curl http://127.0.0.1:8000/summary/1
   # {"user_id": 1, "min": 10, "max": 200, "mean": 105.25}
   ```
+
+
+
+
