@@ -35,7 +35,7 @@ def upload(file: UploadFile = File(...)):
     global data
 
     # Validation check
-    if not file.filename.endswith(".csv"):
+    if not file.filename or not file.filename.endswith(".csv"):
         raise HTTPException(status_code=400, detail="Please upload a CSV file.")
     
     # Read CSV directly from uploaded file
