@@ -6,8 +6,7 @@
 
 This project implements a RESTful API built with FastAPI that processes uploaded CSV data and returns per-user transaction summaries.
 
-The goal is to demonstrate clean, maintainable, and testable backend design - including file uploads, data validation, and analytical summaries using Pandas.
-
+It was developed as a natural progression from my earlier Tkinter-based Budget Tracker, shifting from a desktop-first application to a modern, web-oriented backend. The focus is on clean, testable backend design with CSV uploads and analytics using Pandas.
 ## 🚀 Features
 
 - **/upload** → Accepts CSV file uploads and validates file format.  
@@ -94,6 +93,7 @@ Once the server is running at [http://127.0.0.1:8000](http://127.0.0.1:8000):
   curl http://127.0.0.1:8000/summary/1
   # {"user_id": 1, "min": 10, "max": 200, "mean": 105.25}
   ```
+
 
 
 
